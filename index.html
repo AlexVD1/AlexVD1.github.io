@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alejandro Villafranco Desiderio | Ingeniero de Software</title>
+  
+  <meta name="description" content="Portafolio profesional de Alejandro Villafranco Desiderio: Ingeniero de software especializado en backend Java, microservicios, sistemas distribuidos y automatización mediante IA.">
+  <meta name="author" content="Alejandro Villafranco Desiderio">
+  
+  <!-- Open Graph / Redes Profesionales -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://alexvd1.github.io/">
+  <meta property="og:title" content="Alejandro Villafranco Desiderio | Ingeniero de Software">
+  <meta property="og:description" content="Especializado en backend Java (Quarkus, Spring Boot), microservicios en banca y telecomunicaciones, y pipelines de automatización con IA.">
+  <meta property="og:image" content="https://avatars.githubusercontent.com/u/51519938?v=4">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/img/avatar.png">
+
+  <!-- Tipografía: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ================= NAVEGACIÓN ================= -->
+  <header class="navbar" role="banner">
+    <div class="container navbar-inner">
+      <a href="#inicio" class="nav-brand" aria-label="Alejandro Villafranco - Inicio">
+        <img src="assets/img/avatar.png" alt="Fotografía de Alejandro Villafranco" class="nav-avatar">
+        <div class="nav-brand-text">
+          <span class="nav-brand-name">Alejandro Villafranco</span>
+          <span class="nav-brand-role">
+            <span class="lang-es">Ingeniero de Software</span>
+            <span class="lang-en">Software Engineer</span>
+          </span>
+        </div>
+      </a>
+
+      <nav class="nav-menu" role="navigation" aria-label="Navegación principal">
+        <ul class="nav-links">
+          <li>
+            <a href="#sobre-mi" class="nav-link">
+              <span class="lang-es">Sobre mí</span>
+              <span class="lang-en">About</span>
+            </a>
+          </li>
+          <li>
+            <a href="#experiencia" class="nav-link">
+              <span class="lang-es">Experiencia</span>
+              <span class="lang-en">Experience</span>
+            </a>
+          </li>
+          <li>
+            <a href="#proyectos" class="nav-link">
+              <span class="lang-es">Proyectos</span>
+              <span class="lang-en">Projects</span>
+            </a>
+          </li>
+          <li>
+            <a href="#habilidades" class="nav-link">
+              <span class="lang-es">Habilidades</span>
+              <span class="lang-en">Skills</span>
+            </a>
+          </li>
+          <li>
+            <a href="#contacto" class="nav-link">
+              <span class="lang-es">Contacto</span>
+              <span class="lang-en">Contact</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Selector Bilingüe ES / EN -->
+        <div class="lang-switcher" role="group" aria-label="Selector de idioma">
+          <button type="button" class="lang-btn active" id="lang-btn-es" title="Cambiar a Español">ES</button>
+          <button type="button" class="lang-btn" id="lang-btn-en" title="Switch to English">EN</button>
+        </div>
+
+        <!-- Modo Oscuro / Claro Sobrio -->
+        <button type="button" class="theme-btn" id="theme-toggle-btn" title="Alternar tema visual" aria-label="Alternar tema visual">
+          <span id="theme-icon">🌙</span>
+        </button>
+
+        <!-- CTA Currículum -->
+        <a href="assets/docs/Alejandro_Villafranco_CV_ES.pdf" class="btn btn-secondary btn-sm lang-es" target="_blank" download>
+          Descargar CV
+        </a>
+        <a href="assets/docs/Alejandro_Villafranco_CV_EN.pdf" class="btn btn-secondary btn-sm lang-en" target="_blank" download>
+          Download CV
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="contenido-principal">
+    <!-- ================= ENCABEZADO PRINCIPAL (HERO) ================= -->
+    <section class="hero" id="inicio">
+      <div class="container hero-layout">
+        <div class="hero-main">
+          <div class="status-indicator">
+            <span class="status-dot"></span>
+            <span class="lang-es">Disponible para nuevos retos profesionales</span>
+            <span class="lang-en">Available for new professional opportunities</span>
+          </div>
+
+          <h1 class="hero-name">Alejandro Villafranco Desiderio</h1>
+
+          <p class="hero-position">
+            <span class="lang-es">Ingeniero de software especializado en backend Java, microservicios y sistemas distribuidos, con experiencia en entornos financieros y de telecomunicaciones y proyectos propios de automatización mediante IA.</span>
+            <span class="lang-en">Software engineer specializing in Java backend, microservices, and distributed systems, with experience in banking and telecommunications environments alongside hands-on AI automation projects.</span>
+          </p>
+
+          <p class="hero-summary">
+            <span class="lang-es">
+              Diseño y construyo servicios de alta concurrencia con <strong>Java 21, Quarkus y Spring Boot</strong>, priorizando arquitecturas limpias, modelos de dominio estrictos y mantenibilidad a largo plazo. En el sector financiero (<strong>Almacenadora Banorte</strong>) y de telecomunicaciones (<strong>Altán Redes / Telefónica Movistar</strong>), he trabajado en la integración de flujos regulatorios normativos, procesamiento de datos en tiempo real y la automatización sistemática de tareas críticas.
+            </span>
+            <span class="lang-en">
+              I design and implement high-concurrency backend services with <strong>Java 21, Quarkus, and Spring Boot</strong>, emphasizing clean architecture, strict domain modeling, and long-term maintainability. Across the financial sector (<strong>Almacenadora Banorte</strong>) and telecommunications (<strong>Altán Redes / Telefónica Movistar</strong>), I have led regulatory compliance integrations, real-time data streaming, and systematic operational automation.
+            </span>
+          </p>
+
+          <div class="hero-actions">
+            <!-- Botón CV Principal -->
+            <a href="assets/docs/Alejandro_Villafranco_CV_ES.pdf" class="btn btn-primary lang-es" target="_blank" download>
+              Descargar CV (PDF)
+            </a>
+            <a href="assets/docs/Alejandro_Villafranco_CV_EN.pdf" class="btn btn-primary lang-en" target="_blank" download>
+              Download Resume (PDF)
+            </a>
+
+            <!-- Visor Interactivo ATS -->
+            <a href="assets/docs/cv-es.html" class="btn btn-secondary lang-es" target="_blank" title="Ver currículum en formato ATS interactivo">
+              Ver CV Interactivo
+            </a>
+            <a href="assets/docs/cv-en.html" class="btn btn-secondary lang-en" target="_blank" title="View interactive ATS format resume">
+              Interactive Resume
+            </a>
+
+            <!-- Proyectos -->
+            <a href="#proyectos" class="btn btn-outline">
+              <span class="lang-es">Explorar proyectos</span>
+              <span class="lang-en">Explore projects</span>
+            </a>
+
+            <a href="https://www.linkedin.com/in/alejandro-villafranco-desiderio-3636851b6/" class="btn btn-outline" target="_blank" rel="noopener">
+              LinkedIn ↗
+            </a>
+            <a href="https://github.com/AlexVD1" class="btn btn-outline" target="_blank" rel="noopener">
+              GitHub ↗
+            </a>
+          </div>
+
+          <div class="hero-meta-strip">
+            <span class="hero-meta-item">📍 Celaya, Guanajuato, México</span>
+            <span class="hero-meta-item">•</span>
+            <span class="hero-meta-item">✉️ <a href="mailto:villafrancodesiderio@gmail.com">villafrancodesiderio@gmail.com</a></span>
+            <span class="hero-meta-item">•</span>
+            <span class="hero-meta-item">📱 <a href="tel:+524613777769">+52 461 377 7769</a></span>
+          </div>
+        </div>
+
+        <aside class="hero-photo-aside" aria-label="Fotografía del autor">
+          <img src="assets/img/avatar.png" alt="Alejandro Villafranco" class="hero-photo">
+          <span class="hero-photo-caption">Alejandro Villafranco</span>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ================= SOBRE MÍ / ENFOQUE DE INGENIERÍA ================= -->
+    <section class="about-section" id="sobre-mi">
+      <div class="container about-grid">
+        <div class="section-label-col">
+          <span class="section-tag">
+            <span class="lang-es">Perfil</span>
+            <span class="lang-en">Profile</span>
+          </span>
+          <h2>
+            <span class="lang-es">Sobre mí</span>
+            <span class="lang-en">About me</span>
+          </h2>
+        </div>
+
+        <div class="about-content">
+          <p>
+            <span class="lang-es">
+              Me gusta construir software que resuelva problemas reales y sea fácil de mantener. Mi experiencia en banca y telecomunicaciones me ha enseñado la importancia de la calidad de los datos, la estabilidad del servicio y las decisiones técnicas bien fundamentadas, donde un error en producción tiene un impacto tangible.
+            </span>
+            <span class="lang-en">
+              I enjoy building software that solves real problems and is easy to maintain. My experience in banking and telecommunications taught me the value of data integrity, system stability, and sound technical decisions where production downtime has tangible consequences.
+            </span>
+          </p>
+
+          <p>
+            <span class="lang-es">
+              Prefiero la claridad antes que la sobreingeniería: modelos bien delimitados, contratos de API transparentes y código que cualquier compañero de equipo pueda entender y evolucionar sin fricción. Al mismo tiempo, disfruto experimentar con herramientas modernas, como modelos de lenguaje y automatización audiovisual, para eliminar tareas mecánicas y construir flujos que realmente funcionen de punta a punta.
+            </span>
+            <span class="lang-en">
+              I value clear, maintainable designs over accidental complexity: clean domain boundaries, explicit API contracts, and code that teammates can understand and iterate on smoothly. At the same time, I like experimenting with modern tools—like LLMs and multimedia automation—to remove repetitive friction and build robust end-to-end workflows.
+            </span>
+          </p>
+
+          <div class="pillars-grid">
+            <div class="pillar-item">
+              <h3>
+                <span class="lang-es">Simplicidad & Mantenibilidad</span>
+                <span class="lang-en">Simplicity & Maintainability</span>
+              </h3>
+              <p>
+                <span class="lang-es">Código directo, sin capas innecesarias ni abstracciones forzadas. APIs claras que facilitan el trabajo en equipo.</span>
+                <span class="lang-en">Straightforward code without unnecessary abstractions. Clean APIs that make teamwork easier.</span>
+              </p>
+            </div>
+
+            <div class="pillar-item">
+              <h3>
+                <span class="lang-es">Rigor en Producción</span>
+                <span class="lang-en">Production Rigor</span>
+              </h3>
+              <p>
+                <span class="lang-es">Experiencia en sistemas financieros y bancarios regulados, validación estricta y cálculos transaccionales precisos.</span>
+                <span class="lang-en">Hands-on experience in regulated financial and banking systems, strict validations, and accurate transactional math.</span>
+              </p>
+            </div>
+
+            <div class="pillar-item">
+              <h3>
+                <span class="lang-es">Automatización Práctica</span>
+                <span class="lang-en">Practical Automation</span>
+              </h3>
+              <p>
+                <span class="lang-es">Uso de IA (Gemini API), scripts en Python y herramientas como FFmpeg para automatizar tareas complejas.</span>
+                <span class="lang-en">Using AI (Gemini API), Python scripting, and FFmpeg to automate end-to-end multi-step processes.</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= EXPERIENCIA PROFESIONAL ================= -->
+    <section class="section" id="experiencia">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">
+            <span class="lang-es">Trayectoria</span>
+            <span class="lang-en">Career</span>
+          </span>
+          <h2 class="section-title">
+            <span class="lang-es">Experiencia Profesional</span>
+            <span class="lang-en">Professional Experience</span>
+          </h2>
+          <p class="section-lead">
+            <span class="lang-es">Historial técnico en desarrollo de sistemas bancarios, infraestructura de telecomunicaciones y soporte de misión crítica.</span>
+            <span class="lang-en">Technical track record across enterprise banking platforms, nationwide telecom backbones, and mission-critical operations.</span>
+          </p>
+        </div>
+
+        <div class="experience-list">
+          <!-- Puesto 1: Almacenadora Banorte -->
+          <article class="exp-entry">
+            <div class="exp-top">
+              <h3 class="exp-role-title">Backend Developer</h3>
+              <span class="exp-period">Sep 2025 – Presente</span>
+            </div>
+            <div class="exp-organization">Almacenadora Banorte (NTT DATA) · Celaya, Guanajuato, México</div>
+
+            <p class="exp-summary-text">
+              <span class="lang-es">
+                Ingeniería y desarrollo de microservicios financieros en <strong>Java 21 y Quarkus</strong> bajo arquitectura limpia por capas sobre <strong>SQL Server</strong>. Mi trabajo principal se centró en la construcción de servicios centrales como <code>ms-recibos-deposito</code>, <code>ms-servicios-adicionales</code>, <code>ms-prospectos</code>, <code>ms-expediente-mc</code> y <code>ms-personas-facultadas</code>, además de la resolución de incidencias (fixes) y soporte evolutivo en proyectos satélite.
+              </span>
+              <span class="lang-en">
+                Engineering and delivery of core financial microservices built with <strong>Java 21 and Quarkus</strong> using clean layered architecture on <strong>SQL Server</strong>. Primarily focused on developing key domain services including <code>ms-recibos-deposito</code>, <code>ms-servicios-adicionales</code>, <code>ms-prospectos</code>, <code>ms-expediente-mc</code>, and <code>ms-personas-facultadas</code>, alongside targeted bug fixes and feature enhancements across satellite systems.
+              </span>
+            </p>
+
+            <ul class="exp-contributions">
+              <li>
+                <span class="lang-es"><strong>Desarrollo de Microservicios Core:</strong> Diseñé e implementé la lógica de negocio y contratos REST para los servicios centrales de recibos de depósito, servicios adicionales, prospectos, expedientes de crédito y facultades legales, gestionando entidades anidadas y validaciones estrictas.</span>
+                <span class="lang-en"><strong>Core Microservices Development:</strong> Designed and implemented domain logic and REST contracts for core services (deposit receipts, ancillary services, prospect onboarding, credit files, and legal signatory powers), orchestrating nested relational entities and strict validations.</span>
+              </li>
+              <li>
+                <span class="lang-es"><strong>Cálculo Financiero & Servicios Adicionales:</strong> Construí la lógica transaccional para el dictamen y cálculo automatizado de importes, tarifas de almacenamiento, cobro de servicios adicionales e IVA, garantizando consistencia y validación de elegibilidad en alta concurrencia.</span>
+                <span class="lang-en"><strong>Financial Calculations & Ancillary Services:</strong> Engineered automated fee assessment logic, storage tariffs, ancillary services, and VAT calculations, ensuring transactional consistency and strict eligibility checks under high concurrency.</span>
+              </li>
+              <li>
+                <span class="lang-es"><strong>Emisión Optimizada de Documentos PDF:</strong> Implementé el pipeline para la emisión masiva de comprobantes oficiales y recibos normativos con OpenPDF, reduciendo tiempos de latencia mediante consultas SQL nativas afinadas y paginación a nivel base de datos.</span>
+                <span class="lang-en"><strong>High-Volume Document Generation:</strong> Implemented the pipeline for official receipts and regulatory PDF generation using OpenPDF, minimizing response latencies via indexed native SQL queries and database-level pagination.</span>
+              </li>
+              <li>
+                <span class="lang-es"><strong>Calidad, Pruebas & Soporte Evolutivo:</strong> Definición de contratos API REST con OpenAPI/Swagger, desarrollo de pruebas E2E con Playwright para la consola operativa (Angular / Nx Monorepo) y atención de correcciones (bug fixes) y evolutivos en el resto de aplicaciones de la organización.</span>
+                <span class="lang-en"><strong>Quality, Contracts & System Support:</strong> Defined OpenAPI/Swagger REST contracts, developed Playwright E2E test suites for the operational console (Angular / Nx Monorepo), and delivered targeted bug fixes and incremental enhancements across organizational systems.</span>
+              </li>
+            </ul>
+
+            <div class="tag-list">
+              <span class="tag-label">Stack:</span>
+              <span class="tag tag-accent">Java 21</span>
+              <span class="tag tag-accent">Quarkus</span>
+              <span class="tag">SQL Server</span>
+              <span class="tag">Arquitectura Limpia</span>
+              <span class="tag">Microservicios</span>
+              <span class="tag">OpenAPI / Swagger</span>
+              <span class="tag">OpenPDF</span>
+              <span class="tag">Playwright</span>
+            </div>
+          </article>
+
+          <!-- Puesto 2: Altán Redes / Telefónica Movistar -->
+          <article class="exp-entry">
+            <div class="exp-top">
+              <h3 class="exp-role-title">Java Developer & Support Developer</h3>
+              <span class="exp-period">Jun 2021 – Ago 2025</span>
+            </div>
+            <div class="exp-organization">Altán Redes & Telefónica Movistar Big Data (NTT DATA) · Celaya, Guanajuato, México</div>
+
+            <p class="exp-summary-text">
+              <span class="lang-es">
+                Ingeniería de desarrollo y soporte aplicativo nivel 2/3 para proyectos de misión crítica en telecomunicaciones (Altán Redes y Telefónica Movistar). Dentro del marco de estos proyectos de soporte, en Altán Redes participé activamente en el desarrollo y despliegue de microservicios y pipelines de streaming sobre <strong>AWS Cloud (ECS, Aurora, CloudWatch)</strong>, mientras que en ambas cuentas gestioné la estabilidad en producción, resolución de incidencias y monitoreo 24/7.
+              </span>
+              <span class="lang-en">
+                Software development and L2/L3 application support engineering for mission-critical telecommunications platforms (Altán Redes and Telefónica Movistar). Within the scope of these support engagements, actively developed and deployed microservices and streaming pipelines on <strong>AWS Cloud (ECS, Aurora, CloudWatch)</strong> for Altán Redes, while providing production support, incident mitigation, and 24/7 monitoring across both accounts.
+              </span>
+            </p>
+
+            <ul class="exp-contributions">
+              <li>
+                <span class="lang-es"><strong>Desarrollo de Microservicios & Streaming (Altán Redes):</strong> Como parte del proyecto de soporte y evolución técnica, desarrollé servicios en Java y flujos de procesamiento en tiempo real con Apache Kafka, Apache NiFi y Apache Flink, alimentando tableros analíticos en DruidSQL, PostgreSQL y Apache Superset.</span>
+                <span class="lang-en"><strong>Microservices Development & Streaming (Altán Redes):</strong> As part of technical support and evolutionary engineering, developed Java services and real-time streaming pipelines using Apache Kafka, Apache NiFi, and Apache Flink, feeding analytical layers in DruidSQL, PostgreSQL, and Apache Superset.</span>
+              </li>
+              <li>
+                <span class="lang-es"><strong>Soporte a Producción & Automatización Operativa:</strong> Atención a incidencias y mantenimiento preventivo/correctivo para Altán Redes y Telefónica Movistar. Creación de scripts en Python y Shell Linux para conciliación de datos y tareas operativas, reduciendo fallas e intervenciones manuales en más de un 60%.</span>
+                <span class="lang-en"><strong>Production Support & Operations Automation:</strong> Handled incident triage and preventive/corrective maintenance for Altán Redes and Telefónica Movistar. Developed Python and Linux Shell automations for data reconciliation and system housekeeping, cutting manual operational interventions by over 60%.</span>
+              </li>
+              <li>
+                <span class="lang-es"><strong>Guardias Técnicas & Misión Crítica (24/7):</strong> Cobertura de guardias rotativas y monitoreo proactivo con AWS CloudWatch para la red troncal nacional, diagnosticando y mitigando fallas bajo estrictos acuerdos de nivel de servicio (SLA).</span>
+                <span class="lang-en"><strong>24/7 Mission-Critical Support & Reliability:</strong> Managed rotational on-call support and proactive surveillance with AWS CloudWatch for the nationwide telecommunications backbone, diagnosing and resolving production incidents under strict SLAs.</span>
+              </li>
+            </ul>
+
+            <div class="tag-list">
+              <span class="tag-label">Stack:</span>
+              <span class="tag tag-accent">Java</span>
+              <span class="tag tag-accent">Soporte L2/L3</span>
+              <span class="tag tag-accent">Apache Kafka</span>
+              <span class="tag tag-accent">Apache Flink</span>
+              <span class="tag">Apache NiFi</span>
+              <span class="tag">AWS Cloud</span>
+              <span class="tag">Docker & Kubernetes</span>
+              <span class="tag">Python</span>
+              <span class="tag">Shell Linux</span>
+              <span class="tag">PostgreSQL</span>
+              <span class="tag">CloudWatch</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PROYECTOS DESTACADOS (CASOS DE INGENIERÍA) ================= -->
+    <section class="section" id="proyectos">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">
+            <span class="lang-es">Casos de Estudio</span>
+            <span class="lang-en">Case Studies</span>
+          </span>
+          <h2 class="section-title">
+            <span class="lang-es">Proyectos Destacados de Ingeniería</span>
+            <span class="lang-en">Featured Engineering Projects</span>
+          </h2>
+          <p class="section-lead">
+            <span class="lang-es">Sistemas desarrollados con criterio de producción: modelos de dominio desacoplados, pipelines de generación multimedia e integración con modelos de lenguaje.</span>
+            <span class="lang-en">Systems built with production criteria: decoupled domain models, automated multimedia pipelines, and LLM integrations with real verifiable results.</span>
+          </p>
+        </div>
+
+        <div class="featured-cases">
+          <!-- CASO 1: TRIVIA GENERATOR AI -->
+          <article class="case-card">
+            <div class="case-preview">
+              <img src="assets/img/trivia_preview.jpg" alt="Captura auténtica de TriviaGenerator AI">
+              <button type="button" class="case-video-trigger" 
+                      data-video-src="assets/videos/trivia_preview.mp4" 
+                      data-title-es="TriviaGenerator AI — Demostración de Video Automatizado" 
+                      data-title-en="TriviaGenerator AI — Automated Video Demonstration"
+                      aria-label="Reproducir video de TriviaGenerator AI">
+                <span class="play-badge">▶</span>
+                <span class="play-text">Ver video (9:16)</span>
+              </button>
+            </div>
+
+            <div class="case-content">
+              <div class="case-header">
+                <h3 class="case-title">TriviaGenerator AI</h3>
+                <span class="status-badge">
+                  <span class="lang-es">Producción local / Funcional</span>
+                  <span class="lang-en">Local Production / Verified</span>
+                </span>
+              </div>
+              <div class="case-subtitle">Plataforma de generación tipada con deduplicación y renderizado dinámico</div>
+
+              <div class="case-blocks">
+                <div>
+                  <div class="case-block-label">
+                    <span class="lang-es">Problema técnico</span>
+                    <span class="lang-en">Technical Problem</span>
+                  </div>
+                  <p class="case-block-text">
+                    <span class="lang-es">La generación automatizada de contenido educativo con modelos de lenguaje suele sufrir de inconsistencia de esquemas, respuestas duplicadas entre lotes y falta de validación tipada estricta.</span>
+                    <span class="lang-en">Automated content generation via LLMs often suffers from schema drift, cross-batch question duplication, and lack of strictly enforced domain validation.</span>
+                  </p>
+                </div>
+
+                <div>
+                  <div class="case-block-label">
+                    <span class="lang-es">Solución implementada</span>
+                    <span class="lang-en">Technical Solution</span>
+                  </div>
+                  <p class="case-block-text">
+                    <span class="lang-es">Backend en <strong>Spring Boot 3.3 y Java 21</strong> que conecta con <strong>Google Gemini 3.5 Flash-Lite</strong> mediante esquemas estructurados. Implementa un motor de deduplicación multicapa (hash determinista + comparación semántica), renderizado programático de tarjetas gráficas y aislamiento de contenedores en Podman.</span>
+                    <span class="lang-en">A <strong>Spring Boot 3.3 and Java 21</strong> backend integrating <strong>Google Gemini 3.5 Flash-Lite</strong> with strict schema constraints. Includes a multi-tier deduplication engine (deterministic hashing + semantic checks), programmatic graphic card rendering, and Podman containerization.</span>
+                  </p>
+                </div>
+              </div>
+
+              <div class="case-footer">
+                <div class="tag-list">
+                  <span class="tag tag-accent">Spring Boot 3.3</span>
+                  <span class="tag tag-accent">Java 21 LTS</span>
+                  <span class="tag">Gemini API</span>
+                  <span class="tag">Podman</span>
+                  <span class="tag">Flyway</span>
+                  <span class="tag">PostgreSQL</span>
+                </div>
+                <div class="case-actions">
+                  <button type="button" class="btn btn-secondary btn-sm"
+                          data-video-src="assets/videos/trivia_preview.mp4"
+                          data-title-es="TriviaGenerator AI — Demostración de Video Automatizado"
+                          data-title-en="TriviaGenerator AI — Automated Video Demonstration">
+                    ▶ Ver demo
+                  </button>
+                  <a href="https://github.com/AlexVD1/AIO/tree/main/triviaGenerator" class="btn btn-outline btn-sm" target="_blank" rel="noopener">
+                    Código ↗
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- CASO 2: STORY VIDEO GENERATOR -->
+          <article class="case-card">
+            <div class="case-preview">
+              <img src="assets/img/story_preview.jpg" alt="Captura auténtica de StoryVideoGenerator">
+              <button type="button" class="case-video-trigger" 
+                      data-video-src="assets/videos/story_preview.mp4" 
+                      data-title-es="StoryVideoGenerator — Demostración de Video Vertical (9:16)" 
+                      data-title-en="StoryVideoGenerator — Vertical Video Demonstration (9:16)"
+                      aria-label="Reproducir video de StoryVideoGenerator">
+                <span class="play-badge">▶</span>
+                <span class="play-text">Ver video (9:16)</span>
+              </button>
+            </div>
+
+            <div class="case-content">
+              <div class="case-header">
+                <h3 class="case-title">StoryVideoGenerator</h3>
+                <span class="status-badge">
+                  <span class="lang-es">Operación continua / Batch</span>
+                  <span class="lang-en">Batch Processing / Verified</span>
+                </span>
+              </div>
+              <div class="case-subtitle">Pipeline autónomo de video vertical (9:16) con clonación de voz y subtitulado dinámico</div>
+
+              <div class="case-blocks">
+                <div>
+                  <div class="case-block-label">
+                    <span class="lang-es">Problema técnico</span>
+                    <span class="lang-en">Technical Problem</span>
+                  </div>
+                  <p class="case-block-text">
+                    <span class="lang-es">La producción de video vertical narrativo para redes móviles requiere orquestar múltiples herramientas dispares: redacción de guiones, generación de audio con cadencia natural, animación de subtítulos palabra por palabra y renderizado con audio balanceado.</span>
+                    <span class="lang-en">Producing mobile narrative videos requires coordinating disparate tools: script generation, natural voice inflection, word-level animated subtitling, and final multitrack audio balancing.</span>
+                  </p>
+                </div>
+
+                <div>
+                  <div class="case-block-label">
+                    <span class="lang-es">Solución implementada</span>
+                    <span class="lang-en">Technical Solution</span>
+                  </div>
+                  <p class="case-block-text">
+                    <span class="lang-es">Pipeline integral en <strong>Python y FFmpeg</strong> que transforma premisas narrativas en piezas audiovisuales terminadas en 1080×1920. Integra síntesis y clonación de voz, subtítulos dinámicos de alto impacto, música incidental y scripts para publicación programada sin intervención manual.</span>
+                    <span class="lang-en">An end-to-end pipeline using <strong>Python and FFmpeg</strong> turning story outlines into finished 1080×1920 vertical videos. Synchronizes cloned voice synthesis, high-impact animated subtitles, background scoring, and scheduled publishing scripts without human intervention.</span>
+                  </p>
+                </div>
+              </div>
+
+              <div class="case-footer">
+                <div class="tag-list">
+                  <span class="tag tag-accent">Python 3</span>
+                  <span class="tag tag-accent">FFmpeg</span>
+                  <span class="tag">Gemini API</span>
+                  <span class="tag">Voice Cloning</span>
+                  <span class="tag">Batch Processing</span>
+                </div>
+                <div class="case-actions">
+                  <button type="button" class="btn btn-secondary btn-sm"
+                          data-video-src="assets/videos/story_preview.mp4"
+                          data-title-es="StoryVideoGenerator — Demostración de Video Vertical (9:16)"
+                          data-title-en="StoryVideoGenerator — Vertical Video Demonstration (9:16)">
+                    ▶ Ver demo
+                  </button>
+                  <a href="https://github.com/AlexVD1/AIO/tree/main/StoryVideoGenerator" class="btn btn-outline btn-sm" target="_blank" rel="noopener">
+                    Código ↗
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- CASO 3: KIDS ANIMATION STUDIO -->
+          <article class="case-card">
+            <div class="case-preview">
+              <div class="case-preview-placeholder">
+                <span class="case-preview-icon">🧸</span>
+                <span class="case-preview-note">Arquitectura de Orquestación Local</span>
+                <span style="font-size:0.7rem; color:var(--text-muted);">Spring Boot 3.3 + AI Gateway</span>
+              </div>
+            </div>
+
+            <div class="case-content">
+              <div class="case-header">
+                <h3 class="case-title">KidsAnimationStudio</h3>
+                <span class="status-badge">
+                  <span class="lang-es">En desarrollo / Prototipo funcional</span>
+                  <span class="lang-en">In Development / Working Prototype</span>
+                </span>
+              </div>
+              <div class="case-subtitle">Estudio local de animación educativa infantil con orquestación modular</div>
+
+              <div class="case-blocks">
+                <div>
+                  <div class="case-block-label">
+                    <span class="lang-es">Problema técnico</span>
+                    <span class="lang-en">Technical Problem</span>
+                  </div>
+                  <p class="case-block-text">
+                    <span class="lang-es">La generación de narraciones para niños menores de 7 años demanda coherencia de personajes a lo largo de múltiples escenas, ritmo pedagógico pausado y tonos de voz empáticos que las APIs comerciales genéricas no logran sostener.</span>
+                    <span class="lang-en">Generating educational stories for children under 7 requires character consistency across scenes, controlled pedagogical pacing, and empathetic voice tones that standard commercial APIs fail to deliver.</span>
+                  </p>
+                </div>
+
+                <div>
+                  <div class="case-block-label">
+                    <span class="lang-es">Solución implementada</span>
+                    <span class="lang-en">Technical Solution</span>
+                  </div>
+                  <p class="case-block-text">
+                    <span class="lang-es">Orquestador en <strong>Spring Boot 3.3 / Java 21</strong> completamente desacoplado de su proyecto hermano, enlazado a una pasarela local de IA (AI Gateway) y motores de síntesis de voz clonada infantil. Diseñado con arquitectura limpia para ejecutar el pipeline completo en infraestructura local.</span>
+                    <span class="lang-en">A decoupled <strong>Spring Boot 3.3 / Java 21</strong> orchestrator paired with an AI Gateway and cloned child-friendly voice synthesis modules. Built under clean architecture principles to run the entire pipeline locally without recurring cloud fees.</span>
+                  </p>
+                </div>
+              </div>
+
+              <div class="case-footer">
+                <div class="tag-list">
+                  <span class="tag tag-accent">Spring Boot 3.3</span>
+                  <span class="tag tag-accent">Java 21</span>
+                  <span class="tag">AI Gateway</span>
+                  <span class="tag">Audio Synthesis</span>
+                  <span class="tag">Arquitectura Limpia</span>
+                </div>
+                <div class="case-actions">
+                  <a href="https://github.com/AlexVD1/AIO/tree/main/KidsAnimationStudio" class="btn btn-outline btn-sm" target="_blank" rel="noopener">
+                    Código ↗
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- ================= PROYECTOS SECUNDARIOS ================= -->
+        <div style="margin-top: 48px;">
+          <h3 style="font-size: 1.15rem; font-weight: 700; color: var(--text-primary); margin-bottom: 6px;">
+            <span class="lang-es">Otros Proyectos y Herramientas Técnicas</span>
+            <span class="lang-en">Additional Projects & Technical Tools</span>
+          </h3>
+          <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 18px;">
+            <span class="lang-es">Arquitecturas de referencia, simuladores de inversión cuantitativa y utilidades de software.</span>
+            <span class="lang-en">Reference architectures, quantitative trading engines, and specialized utilities.</span>
+          </p>
+
+          <div class="secondary-projects-grid">
+            <!-- Banking Platform -->
+            <div class="sec-card">
+              <div class="sec-card-header">
+                <h4 class="sec-card-title">Banking Microservices Platform</h4>
+                <span class="tag tag-accent">Enterprise</span>
+              </div>
+              <p class="sec-card-desc">
+                <span class="lang-es">Arquitectura financiera desacoplada para transacciones y validaciones concurrentes con contenedores Docker y auditoría de calidad continua en SonarQube.</span>
+                <span class="lang-en">Enterprise financial architecture for concurrent transactional validations with Docker containers and continuous code quality audits in SonarQube.</span>
+              </p>
+              <div class="sec-card-footer">
+                <span class="tag">Spring Boot / Docker</span>
+                <a href="https://github.com/AlexVD1/AIO/tree/main/studying" class="sec-card-link" target="_blank" rel="noopener">Repositorio ↗</a>
+              </div>
+            </div>
+
+            <!-- SAI -->
+            <div class="sec-card">
+              <div class="sec-card-header">
+                <h4 class="sec-card-title">SAI — Sistema de Inversión</h4>
+                <span class="tag">Fintech</span>
+              </div>
+              <p class="sec-card-desc">
+                <span class="lang-es">Plataforma cuantitativa de backtesting y simulación (paper trading) en Python 3.11 con separación estricta: datos, análisis, estrategia, riesgo y ejecución.</span>
+                <span class="lang-en">Quantitative backtesting and paper trading platform built in Python 3.11 with strict separation between data, strategy, and risk modules.</span>
+              </p>
+              <div class="sec-card-footer">
+                <span class="tag">Python 3.11 / AsyncIO</span>
+                <a href="https://github.com/AlexVD1/SAI" class="sec-card-link" target="_blank" rel="noopener">Repositorio ↗</a>
+              </div>
+            </div>
+
+            <!-- Catálogo de Arquitecturas -->
+            <div class="sec-card">
+              <div class="sec-card-header">
+                <h4 class="sec-card-title">Catálogo de Arquitecturas</h4>
+                <span class="tag">Arquitectura</span>
+              </div>
+              <p class="sec-card-desc">
+                <span class="lang-es">Ejemplos y análisis de patrones de software: Arquitectura Hexagonal (Ports & Adapters en Spring Boot), Event-Driven, Microservicios y Serverless.</span>
+                <span class="lang-en">Reference implementations of software patterns: Hexagonal Architecture (Ports & Adapters in Spring Boot), Event-Driven, Microservices, and Serverless.</span>
+              </p>
+              <div class="sec-card-footer">
+                <span class="tag">Java / Spring Boot</span>
+                <a href="https://github.com/AlexVD1/Arquitecturas" class="sec-card-link" target="_blank" rel="noopener">Repositorio ↗</a>
+              </div>
+            </div>
+
+            <!-- Generadores Studio -->
+            <div class="sec-card">
+              <div class="sec-card-header">
+                <h4 class="sec-card-title">Generadores Studio</h4>
+                <span class="tag">Web Utility</span>
+              </div>
+              <p class="sec-card-desc">
+                <span class="lang-es">Suite cliente para creadores de contenido (temporizadores, generadores de tarjetas) desplegada y operativa en GitHub Pages.</span>
+                <span class="lang-en">Client-side utility suite for digital creators (custom timers, visual tools) deployed live on GitHub Pages.</span>
+              </p>
+              <div class="sec-card-footer">
+                <span class="tag">HTML / CSS / JS</span>
+                <a href="https://alexvd1.github.io/GeneradoresStudio/" class="sec-card-link" target="_blank" rel="noopener">Demo en vivo ↗</a>
+              </div>
+            </div>
+
+            <!-- AchieveHub -->
+            <div class="sec-card">
+              <div class="sec-card-header">
+                <h4 class="sec-card-title">AchieveHub</h4>
+                <span class="tag">Gamer Hub</span>
+              </div>
+              <p class="sec-card-desc">
+                <span class="lang-es">Plataforma de seguimiento y tracking de logros al 100% para librerías de Steam con interfaz estilizada y servidor en Python/Flask.</span>
+                <span class="lang-en">Web tracking platform for 100% Steam achievements completion and gamer showcase powered by Python/Flask.</span>
+              </p>
+              <div class="sec-card-footer">
+                <span class="tag">Python / Flask</span>
+                <span style="color:var(--text-muted); font-size:0.75rem;">Proyecto personal</span>
+              </div>
+            </div>
+
+            <!-- Traductor PDFs Gemini -->
+            <div class="sec-card">
+              <div class="sec-card-header">
+                <h4 class="sec-card-title">Traductor de PDFs Técnicos</h4>
+                <span class="tag">Gemini API</span>
+              </div>
+              <p class="sec-card-desc">
+                <span class="lang-es">Script en Python para traducir libros extensos de System Design respetando terminología técnica y formato Markdown.</span>
+                <span class="lang-en">Python automation tool for translating dense System Design books while preserving technical terms and Markdown syntax.</span>
+              </p>
+              <div class="sec-card-footer">
+                <span class="tag">Python / Markdown</span>
+                <span style="color:var(--text-muted); font-size:0.75rem;">Utilidad de estudio</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= HABILIDADES TÉCNICAS (6 GRUPOS ESTRUCTURADOS) ================= -->
+    <section class="section" id="habilidades">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">
+            <span class="lang-es">Competencias</span>
+            <span class="lang-en">Competencies</span>
+          </span>
+          <h2 class="section-title">
+            <span class="lang-es">Habilidades Técnicas y Tecnologías</span>
+            <span class="lang-en">Technical Skills & Technologies</span>
+          </h2>
+          <p class="section-lead">
+            <span class="lang-es">Herramientas organizadas por área de especialización y contexto real de uso profesional.</span>
+            <span class="lang-en">Tools categorized by engineering domain and backed by practical enterprise application.</span>
+          </p>
+        </div>
+
+        <div class="skills-grid-6">
+          <!-- 1. Backend y APIs -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <span style="font-size:1.1rem;">☕</span>
+              <h3 class="skill-cat-title">
+                <span class="lang-es">Backend y APIs</span>
+                <span class="lang-en">Backend & APIs</span>
+              </h3>
+            </div>
+            <p class="skill-cat-description">
+              <span class="lang-es">Desarrollo de servicios tipados, modelos de dominio, validaciones financieras y contratos REST.</span>
+              <span class="lang-en">Strictly typed services, rich domain modeling, financial rules, and REST API specification.</span>
+            </p>
+            <div class="skill-pills-wrap">
+              <span class="tag tag-accent">Java 21 LTS</span>
+              <span class="tag tag-accent">Java 17</span>
+              <span class="tag tag-accent">Quarkus</span>
+              <span class="tag tag-accent">Spring Boot 3</span>
+              <span class="tag">REST APIs</span>
+              <span class="tag">OpenAPI / Swagger</span>
+              <span class="tag">OpenPDF</span>
+            </div>
+          </div>
+
+          <!-- 2. Arquitectura de Software y Sistemas Distribuidos -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <span style="font-size:1.1rem;">🏛️</span>
+              <h3 class="skill-cat-title">
+                <span class="lang-es">Arquitectura & Sistemas Distribuidos</span>
+                <span class="lang-en">Architecture & Distributed Systems</span>
+              </h3>
+            </div>
+            <p class="skill-cat-description">
+              <span class="lang-es">Diseño modular por capas, integración de servicios bancarios y cumplimiento normativo.</span>
+              <span class="lang-en">Layered architectural patterns, banking service integrations, and regulatory standards.</span>
+            </p>
+            <div class="skill-pills-wrap">
+              <span class="tag tag-accent">Arquitectura Hexagonal</span>
+              <span class="tag tag-accent">Arquitectura Limpia</span>
+              <span class="tag">Microservicios</span>
+              <span class="tag">Event-Driven (EDA)</span>
+              <span class="tag">APIs Financieras</span>
+              <span class="tag">Servicios SOAP / WSDL</span>
+            </div>
+          </div>
+
+          <!-- 3. Bases de Datos y Procesamiento de Datos -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <span style="font-size:1.1rem;">📊</span>
+              <h3 class="skill-cat-title">
+                <span class="lang-es">Bases de Datos & Procesamiento de Datos</span>
+                <span class="lang-en">Databases & Data Processing</span>
+              </h3>
+            </div>
+            <p class="skill-cat-description">
+              <span class="lang-es">Persistencia relacional optimizada, ingesta masiva de eventos y consultas analíticas.</span>
+              <span class="lang-en">Optimized relational persistence, high-volume event ingestion, and analytical queries.</span>
+            </p>
+            <div class="skill-pills-wrap">
+              <span class="tag tag-accent">SQL Server (T-SQL)</span>
+              <span class="tag tag-accent">Apache Kafka</span>
+              <span class="tag">Apache Flink</span>
+              <span class="tag">Apache NiFi</span>
+              <span class="tag">PostgreSQL / Aurora</span>
+              <span class="tag">Flyway Migrations</span>
+              <span class="tag">DruidSQL</span>
+            </div>
+          </div>
+
+          <!-- 4. Cloud, Contenedores y CI/CD -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <span style="font-size:1.1rem;">☁️</span>
+              <h3 class="skill-cat-title">
+                <span class="lang-es">Cloud & Contenedores</span>
+                <span class="lang-en">Cloud & Containers</span>
+              </h3>
+            </div>
+            <p class="skill-cat-description">
+              <span class="lang-es">Empaquetado en contenedores, servicios en la nube y monitoreo de alta disponibilidad.</span>
+              <span class="lang-en">Containerized packaging, cloud services, and proactive high-availability monitoring.</span>
+            </p>
+            <div class="skill-pills-wrap">
+              <span class="tag tag-accent">Docker</span>
+              <span class="tag tag-accent">Podman</span>
+              <span class="tag">Kubernetes (K8s)</span>
+              <span class="tag">AWS (ECS, CloudWatch, Aurora)</span>
+              <span class="tag">GitLab CI</span>
+              <span class="tag">Linux Shell</span>
+            </div>
+          </div>
+
+          <!-- 5. Automatización, Python e IA Generativa -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <span style="font-size:1.1rem;">🤖</span>
+              <h3 class="skill-cat-title">
+                <span class="lang-es">Automatización, Python & IA Generativa</span>
+                <span class="lang-en">Automation, Python & Generative AI</span>
+              </h3>
+            </div>
+            <p class="skill-cat-description">
+              <span class="lang-es">Integración de modelos fundacionales, scripting de mantenimiento y renderizado multimedia.</span>
+              <span class="lang-en">Foundation model integration, operational scripting, and automated media production.</span>
+            </p>
+            <div class="skill-pills-wrap">
+              <span class="tag tag-accent">Google Gemini API</span>
+              <span class="tag tag-accent">Python 3 (AsyncIO, Pandas)</span>
+              <span class="tag">FFmpeg Automation</span>
+              <span class="tag">Clonación de Voz</span>
+              <span class="tag">Shell Linux (Bash)</span>
+              <span class="tag">PowerShell Scripting</span>
+            </div>
+          </div>
+
+          <!-- 6. Testing y Calidad de Software -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <span style="font-size:1.1rem;">🛡️</span>
+              <h3 class="skill-cat-title">
+                <span class="lang-es">Testing y Calidad de Software</span>
+                <span class="lang-en">Testing & Software Quality</span>
+              </h3>
+            </div>
+            <p class="skill-cat-description">
+              <span class="lang-es">Pruebas automatizadas de extremo a extremo, auditorías estáticas de código y estabilización.</span>
+              <span class="lang-en">Automated end-to-end testing, static code quality governance, and defect mitigation.</span>
+            </p>
+            <div class="skill-pills-wrap">
+              <span class="tag tag-accent">Playwright (E2E)</span>
+              <span class="tag tag-accent">SonarQube</span>
+              <span class="tag">JUnit 5</span>
+              <span class="tag">Pruebas de Integración</span>
+              <span class="tag">Postman Collections</span>
+              <span class="tag">Monitoreo CloudWatch</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= EDUCACIÓN & CREDENCIALES ================= -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">
+            <span class="lang-es">Formación</span>
+            <span class="lang-en">Credentials</span>
+          </span>
+          <h2 class="section-title">
+            <span class="lang-es">Educación y Credenciales</span>
+            <span class="lang-en">Education & Credentials</span>
+          </h2>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 16px;">
+          <div class="exp-entry" style="padding: 18px 22px;">
+            <div style="font-size: 0.78rem; font-family: var(--font-mono); color: var(--text-muted); margin-bottom: 2px;">2017 – 2021</div>
+            <h3 style="font-size: 1.02rem; font-weight: 700; color: var(--text-primary); margin-bottom: 3px;">
+              <span class="lang-es">Ingeniería en Redes y Telecomunicaciones</span>
+              <span class="lang-en">B.S. in Networking and Telecommunications Engineering</span>
+            </h3>
+            <div style="font-size: 0.88rem; color: var(--accent); font-weight: 600;">Universidad Politécnica de Juventino Rosas</div>
+            <p style="font-size: 0.82rem; color: var(--text-muted); margin-top: 6px;">Guanajuato, México · Título e Ingeniería concluida</p>
+          </div>
+
+          <div class="exp-entry" style="padding: 18px 22px;">
+            <div style="font-size: 0.78rem; font-family: var(--font-mono); color: var(--text-muted); margin-bottom: 2px;">Acreditación Profesional</div>
+            <h3 style="font-size: 1.02rem; font-weight: 700; color: var(--text-primary); margin-bottom: 3px;">Centers Developer (ID: 202182)</h3>
+            <div style="font-size: 0.88rem; color: var(--accent); font-weight: 600;">NTT DATA</div>
+            <p style="font-size: 0.82rem; color: var(--text-muted); margin-top: 6px;">
+              <span class="lang-es">Cuentas atendidas: Almacenadora Banorte, Altán Redes, Telefónica Movistar. Formación continua en SCRUM, Microservicios y AWS. Idiomas: Español (Nativo), Inglés (B2 Profesional).</span>
+              <span class="lang-en">Client accounts served: Almacenadora Banorte, Altán Redes, Telefónica Movistar. Continuous training in SCRUM, Microservices, and AWS. Languages: Spanish (Native), English (B2 Professional).</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACTO PROFESIONAL ================= -->
+    <section class="contact-section" id="contacto">
+      <div class="container">
+        <div class="contact-card">
+          <div>
+            <span class="section-tag">
+              <span class="lang-es">Comunicación Directa</span>
+              <span class="lang-en">Direct Communication</span>
+            </span>
+            <h2 class="contact-headline">
+              <span class="lang-es">Iniciemos una conversación profesional</span>
+              <span class="lang-en">Let's discuss engineering opportunities</span>
+            </h2>
+            <p class="contact-text">
+              <span class="lang-es">
+                Estoy disponible para incorporarme a equipos que construyen sistemas backend de misión crítica en Java (Quarkus / Spring Boot) o para el diseño de soluciones de automatización con inteligencia artificial.
+              </span>
+              <span class="lang-en">
+                I am open to discussions regarding backend software engineering roles in Java (Quarkus / Spring Boot), distributed architectures, and AI-driven automation initiatives.
+              </span>
+            </p>
+
+            <div class="contact-details-grid">
+              <div class="contact-detail-box">
+                <div class="contact-detail-label">Correo profesional</div>
+                <div class="contact-detail-value">
+                  <a href="mailto:villafrancodesiderio@gmail.com">villafrancodesiderio@gmail.com</a>
+                </div>
+              </div>
+              <div class="contact-detail-box">
+                <div class="contact-detail-label">Teléfono directo</div>
+                <div class="contact-detail-value">
+                  <a href="tel:+524613777769">+52 461 377 7769</a>
+                </div>
+              </div>
+              <div class="contact-detail-box">
+                <div class="contact-detail-label">Ubicación</div>
+                <div class="contact-detail-value">Celaya, Guanajuato, México</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-actions-vertical">
+            <a href="mailto:villafrancodesiderio@gmail.com" class="btn btn-primary">
+              Enviar correo directo
+            </a>
+            <a href="https://www.linkedin.com/in/alejandro-villafranco-desiderio-3636851b6/" class="btn btn-secondary" target="_blank" rel="noopener">
+              Ver perfil en LinkedIn ↗
+            </a>
+            <a href="https://github.com/AlexVD1" class="btn btn-secondary" target="_blank" rel="noopener">
+              Ver perfil en GitHub ↗
+            </a>
+            <a href="assets/docs/Alejandro_Villafranco_CV_ES.pdf" class="btn btn-outline btn-sm lang-es" target="_blank" download>
+              Descargar CV (PDF)
+            </a>
+            <a href="assets/docs/Alejandro_Villafranco_CV_EN.pdf" class="btn btn-outline btn-sm lang-en" target="_blank" download>
+              Download Resume (PDF)
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= PIE DE PÁGINA ================= -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer-inner">
+      <div>
+        © 2026 <strong>Alejandro Villafranco Desiderio</strong> · 
+        <span class="lang-es">Ingeniero de Software</span>
+        <span class="lang-en">Software Engineer</span>
+      </div>
+      <nav class="footer-nav" aria-label="Enlaces secundarios">
+        <a href="#inicio">↑ 
+          <span class="lang-es">Volver arriba</span>
+          <span class="lang-en">Back to top</span>
+        </a>
+        <a href="https://github.com/AlexVD1/AlexVD1.github.io" target="_blank" rel="noopener">
+          <span class="lang-es">Repositorio del sitio ↗</span>
+          <span class="lang-en">Site source ↗</span>
+        </a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- ================= REPRODUCTOR MODAL DE VIDEO ================= -->
+  <div class="modal-overlay" id="video-modal" role="dialog" aria-modal="true" aria-labelledby="modal-video-title">
+    <div class="modal-window">
+      <div class="modal-header">
+        <h4 class="modal-title" id="modal-video-title">Demostración</h4>
+        <button type="button" class="modal-close-btn" id="modal-close-btn" aria-label="Cerrar reproductor">✕</button>
+      </div>
+      <div class="modal-video-container">
+        <video id="modal-video-player" controls playsinline></video>
+      </div>
+      <div class="modal-footer">
+        <span>🎬 Demostración de video vertical (9:16)</span>
+        <span style="font-family:var(--font-mono); font-size:0.7rem;">Muestra auténtica</span>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
